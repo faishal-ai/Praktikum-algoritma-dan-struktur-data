@@ -10,8 +10,13 @@ public class Buku09Main {
 
         bk1.tampilinformasi();
         bk1.terjual(5);
-        bk1.gantiHarga(6000);
+        bk1.gantiHarga(60000);
         bk1.tampilinformasi();
+
+        Buku09 bk2 = new Buku09("Self Reward", "Maheera Ayesha", 160, 29, 59000);
+        bk2.terjual( 11);
+        bk2.tampilinformasi();
 
     }
 }
+
