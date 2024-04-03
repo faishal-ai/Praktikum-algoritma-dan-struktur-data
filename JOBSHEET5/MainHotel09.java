@@ -1,5 +1,4 @@
-import JOBSHEET5.Hotel09;
-
+package JOBSHEET5;
 public class MainHotel09 {
     public static void main(String[] args) {
 

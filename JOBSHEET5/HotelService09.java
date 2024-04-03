@@ -1,5 +1,4 @@
-import JOBSHEET5.Hotel09;
-
+package JOBSHEET5;
 public class HotelService09 {
     public Hotel09 rooms[] = new Hotel09[5];
     public int idx;
