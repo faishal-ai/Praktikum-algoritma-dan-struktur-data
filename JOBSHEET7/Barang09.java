@@ -1,5 +1,4 @@
-package JOOBSHEET7;
-
+package JOBSHEET7;
 public class Barang09 {
     int kode;
     String nama;

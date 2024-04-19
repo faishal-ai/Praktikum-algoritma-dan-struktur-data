@@ -1,6 +1,7 @@
-package JOOBSHEET7;
+package JOBSHEET7;
+
 import java.util.Scanner;
-public class Utama09 {
+public class Utama09{
     public static void main(String[] args) {
         Gudang09 gudang = new Gudang09(7);
         try (Scanner scanner = new Scanner(System.in)) {
@@ -9,7 +10,9 @@ public class Utama09 {
                 System.out.println("1. Tambah barang");
                 System.out.println("2. Ambil barang");
                 System.out.println("3. Tampilkan tumpukan barang");
-                System.out.println("4. Keluar");
+                System.out.println("4. Lihat barang terbawah");
+                System.out.println("5. Cari barang");
+                System.out.println("6. Keluar");
                 System.out.print("Pilih operasi: ");
                 int pilihan = scanner.nextInt();
                 scanner.nextLine();
@@ -35,12 +38,26 @@ public class Utama09 {
                 case 3:
                     gudang.tampilkanBarang();
                     break;
-                    
+                          
                 case 4:
-                    System.exit(0);
-                    default:
-                    System.out.println("Pilihan tidak valid. Silakan coba lagi.");
+                    gudang.lihatBarangTeratas();
+                    break;
+                    case 5:
+                    System.out.print("Masukkan kode barang yang ingin dicari: ");
+                    String kodeAtauNama = scanner.nextLine();
+                    Barang09 barangDitemukan = gudang.cariBarang(kodeAtauNama);
+                    if (barangDitemukan != null) {
+                        System.out.println("Barang ditemukan: " + barangDitemukan.nama);
+                    } else {
+                        System.out.println("Barang dengan kode atau nama tersebut tidak ditemukan.");
                     }
+                    break;
+                
+                case 6:
+                    System.exit(0);
+                default:
+                    System.out.println("Pilihan tidak valid. Silakan coba lagi.");
+            }
             }
         }
         }
