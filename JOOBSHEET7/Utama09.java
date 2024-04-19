@@ -1,4 +1,4 @@
-package JOBSHEET7.Percobaan1;
+package JOOBSHEET7;
 import java.util.Scanner;
 public class Utama09 {
     public static void main(String[] args) {
@@ -46,6 +46,3 @@ public class Utama09 {
         }
         
 }
-
-    
-    

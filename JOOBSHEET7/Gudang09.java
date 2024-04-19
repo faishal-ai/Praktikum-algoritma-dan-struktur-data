@@ -1,4 +1,4 @@
-package JOBSHEET7.Percobaan1;
+package JOOBSHEET7;
 
 public class Gudang09 {
     Barang09[] tumpukan;
